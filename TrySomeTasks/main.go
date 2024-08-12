@@ -8,6 +8,10 @@ import (
 	"strings"
 )
 
+func sum(num int, num2 int) int {
+	return num + num2
+}
+
 func main() {
 	dict := make(map[int]bool)
 	reader := bufio.NewReader(os.Stdin)
