@@ -38,5 +38,5 @@ func main() {
 	fmt.Printf("Type: %T Value: %v\n", module, module)
 	fmt.Printf("Type: %T Value: %v\n", maxInt, maxInt)
 	fmt.Printf("Type: %T Value: %v\n", z, z)
-
+	fmt.Println("GIGACHAT " + ModifuSpaces("GIGACHAT", "dash") + "!")
 }
