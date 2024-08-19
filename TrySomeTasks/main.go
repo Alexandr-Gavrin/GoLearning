@@ -1,9 +1,10 @@
 package main
 
 import (
-	"bufio"
+	"context"
 	"fmt"
-	"os"
+
+	"golang.org/x/sync/errgroup"
 )
 
 type LinkedList struct {
@@ -139,14 +140,15 @@ type Book struct {
 }
 
 func main() {
+	g, ctx := errgroup.WithContext(context.Background())
+	fmt.Println(g, ctx)
+	//var reader *bufio.Reader
+	//	var writer *bufio.Writer
 
-	var reader *bufio.Reader
-	var writer *bufio.Writer
-
-	reader = bufio.NewReader(os.Stdin)
-	line, _ := reader.ReadString('\n')
-	writer.WriteString(line)
-	writer.Flush()
+	//	reader = bufio.NewReader(os.Stdin)
+	//	line, _ := reader.ReadString('\n')
+	//writer.WriteString(line)
+	//	writer.Flush()
 
 	// var n int
 	// fmt.Scan(&n)
